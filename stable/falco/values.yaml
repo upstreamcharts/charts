@@ -3,7 +3,7 @@
 image:
   registry: docker.io
   repository: falcosecurity/falco
-  tag: 0.15.3
+  tag: 0.15.4
   pullPolicy: IfNotPresent
 
 docker:
@@ -43,7 +43,7 @@ serviceAccount:
 
 fakeEventGenerator:
   enabled: false
-  replicas: 1
+  replicas: 2
 
 daemonset:
   # Perform rolling updates by default in the DaemonSet agent
