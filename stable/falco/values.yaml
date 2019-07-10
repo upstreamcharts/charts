@@ -3,7 +3,7 @@
 image:
   registry: docker.io
   repository: falcosecurity/falco
-  tag: 0.15.4
+  tag: 0.15.5
   pullPolicy: IfNotPresent
 
 docker:
@@ -22,7 +22,7 @@ resources:
     cpu: 100m
     memory: 512Mi
   limits:
-    cpu: 200m
+    cpu: 210m
     memory: 1024Mi
 
 extraArgs: []
