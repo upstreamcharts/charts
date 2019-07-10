@@ -17,7 +17,7 @@ image:
   ## Bitnami MongoDB image tag
   ## ref: https://hub.docker.com/r/bitnami/mongodb/tags/
   ##
-  tag: 4.0.10-debian-9-r39
+  tag: 4.0.11-debian-9-r39
   ## Specify a imagePullPolicy
   ## ref: http://kubernetes.io/docs/user-guide/images/#pre-pulling-images
   ##
@@ -255,14 +255,14 @@ livenessProbe:
   periodSeconds: 10
   timeoutSeconds: 5
   failureThreshold: 6
-  successThreshold: 1
+  successThreshold: 4
 readinessProbe:
   enabled: true
   initialDelaySeconds: 5
   periodSeconds: 10
   timeoutSeconds: 5
   failureThreshold: 6
-  successThreshold: 1
+  successThreshold: 4
 
 # Define custom config map with init scripts
 initConfigMap: {}
